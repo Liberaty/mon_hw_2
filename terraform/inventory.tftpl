@@ -1,0 +1,52 @@
+---
+Prometheus:
+  hosts:
+%{~ for i in prometheus_hosts ~}
+
+    ${i.name}:
+      ansible_host: ${i.network_interface[0].nat_ip_address == "" ? i.network_interface[0].ip_address : i.network_interface[0].nat_ip_address}
+      ansible_connection: ssh
+      ansible_user: ubuntu
+      ansible_ssh_private_key_file: ~/.ssh/id_ed25519
+      ansible_python_interpreter: /usr/bin/python3
+
+%{~ endfor ~}
+
+Alertmanager:
+  hosts:
+%{~ for i in alertmanager_hosts ~}
+
+    ${i.name}:
+      ansible_host: ${i.network_interface[0].nat_ip_address == "" ? i.network_interface[0].ip_address : i.network_interface[0].nat_ip_address}
+      ansible_connection: ssh
+      ansible_user: ubuntu
+      ansible_ssh_private_key_file: ~/.ssh/id_ed25519
+      ansible_python_interpreter: /usr/bin/python3
+
+%{~ endfor ~}
+
+Grafana:
+  hosts:
+%{~ for i in grafana_hosts ~}
+
+    ${i.name}:
+      ansible_host: ${i.network_interface[0].nat_ip_address == "" ? i.network_interface[0].ip_address : i.network_interface[0].nat_ip_address}
+      ansible_connection: ssh
+      ansible_user: ubuntu
+      ansible_ssh_private_key_file: ~/.ssh/id_ed25519
+      ansible_python_interpreter: /usr/bin/python3
+
+%{~ endfor ~}
+
+Node_Exporter:
+  hosts:
+%{~ for i in node_exporter_hosts ~}
+
+    ${i.name}:
+      ansible_host: ${i.network_interface[0].nat_ip_address == "" ? i.network_interface[0].ip_address : i.network_interface[0].nat_ip_address}
+      ansible_connection: ssh
+      ansible_user: ubuntu
+      ansible_ssh_private_key_file: ~/.ssh/id_ed25519
+      ansible_python_interpreter: /usr/bin/python3
+
+%{~ endfor ~}
