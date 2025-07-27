@@ -8,6 +8,7 @@
 # Log files
 crash.log
 crash.*.log
+ansible.log
 ansible/ansible.log
 ansible/*.log
 ansible/**/*.log
