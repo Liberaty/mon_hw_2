@@ -16,7 +16,7 @@ resource "local_file" "ansible_inventory" {
     node_exporter_hosts = local.node_exporter_hosts
   })
 
-  filename = "${path.module}../ansible/inventory/hosts.yml"
+  filename = "${path.root}/${var.ansible_inventory_path}"
 }
 
 # Version 1

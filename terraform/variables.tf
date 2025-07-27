@@ -30,6 +30,12 @@ variable "vm_web_family" {
   default = "ubuntu-2204-lts-oslogin"
 }
 
+variable "ansible_inventory_path" {
+  description = "Путь к ansible inventory относительно каталога Terraform (или абсолютный)"
+  type        = string
+  default     = "../ansible/inventory/inventory.yml"
+}
+
 # Переменные для описания конфигураций ВМ Ubuntu
 variable "ubuntu_vm_config" {
   type = list(object({
