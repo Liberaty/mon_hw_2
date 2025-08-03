@@ -22,17 +22,38 @@
 ### Задание 1
 
 1. Используя директорию [help](./help) внутри этого домашнего задания, запустите связку prometheus-grafana.
-1. Зайдите в веб-интерфейс grafana, используя авторизационные данные, указанные в манифесте docker-compose.
-1. Подключите поднятый вами prometheus, как источник данных.
-1. Решение домашнего задания — скриншот веб-интерфейса grafana со списком подключенных Datasource.
+#
+***Ответ***
+Поднял всё это исключительно с помощью [Terraform](https://github.com/Liberaty/mon_hw_2/tree/main/terraform) и [Ansible](https://github.com/Liberaty/mon_hw_2/tree/main/ansible)
+#
+![1.1.png](https://github.com/Liberaty/mon_hw_2/blob/main/img/1.1.png?raw=true)
+#
+2. Зайдите в веб-интерфейс grafana, используя авторизационные данные, указанные в манифесте docker-compose.
+#
+***Ответ***
+#
+![1.2.png](https://github.com/Liberaty/mon_hw_2/blob/main/img/1.2.png?raw=true)
+#
+3. Подключите поднятый вами prometheus, как источник данных.
+#
+***Ответ***
+#
+![1.3.png](https://github.com/Liberaty/mon_hw_2/blob/main/img/1.3.png?raw=true)
+#
+4. Решение домашнего задания — скриншот веб-интерфейса grafana со списком подключенных Datasource.
+#
+***Ответ***
+#
+![1.4.png](https://github.com/Liberaty/mon_hw_2/blob/main/img/1.4.png?raw=true)
+#
 
 ## Задание 2
 
 Изучите самостоятельно ресурсы:
 
 1. [PromQL tutorial for beginners and humans](https://valyala.medium.com/promql-tutorial-for-beginners-9ab455142085).
-1. [Understanding Machine CPU usage](https://www.robustperception.io/understanding-machine-cpu-usage).
-1. [Introduction to PromQL, the Prometheus query language](https://grafana.com/blog/2020/02/04/introduction-to-promql-the-prometheus-query-language/).
+2. [Understanding Machine CPU usage](https://www.robustperception.io/understanding-machine-cpu-usage).
+3. [Introduction to PromQL, the Prometheus query language](https://grafana.com/blog/2020/02/04/introduction-to-promql-the-prometheus-query-language/).
 
 Создайте Dashboard и в ней создайте Panels:
 
@@ -46,12 +67,12 @@
 ## Задание 3
 
 1. Создайте для каждой Dashboard подходящее правило alert — можно обратиться к первой лекции в блоке «Мониторинг».
-1. В качестве решения задания приведите скриншот вашей итоговой Dashboard.
+2. В качестве решения задания приведите скриншот вашей итоговой Dashboard.
 
 ## Задание 4
 
 1. Сохраните ваш Dashboard.Для этого перейдите в настройки Dashboard, выберите в боковом меню «JSON MODEL». Далее скопируйте отображаемое json-содержимое в отдельный файл и сохраните его.
-1. В качестве решения задания приведите листинг этого файла.
+2. В качестве решения задания приведите листинг этого файла.
 
 ---
 
