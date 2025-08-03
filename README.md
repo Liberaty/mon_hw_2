@@ -82,18 +82,33 @@ Free Disk Space (GB) - "node_filesystem_avail_bytes{mountpoint="/"}"
 #
 ![2.2.png](https://github.com/Liberaty/mon_hw_2/blob/main/img/2.2.png?raw=true)
 #
-
-
 ## Задание 3
-
+#
 1. Создайте для каждой Dashboard подходящее правило alert — можно обратиться к первой лекции в блоке «Мониторинг».
-2. В качестве решения задания приведите скриншот вашей итоговой Dashboard.
+#
+***Ответ***
 
+![3.1.png](https://github.com/Liberaty/mon_hw_2/blob/main/img/3.1.png?raw=true)
+
+![3.2.png](https://github.com/Liberaty/mon_hw_2/blob/main/img/3.2.png?raw=true)
+#
+2. В качестве решения задания приведите скриншот вашей итоговой Dashboard.
+#
+***Ответ***
+![3.3.png](https://github.com/Liberaty/mon_hw_2/blob/main/img/3.3.png?raw=true)
+#
 ## Задание 4
 
 1. Сохраните ваш Dashboard.Для этого перейдите в настройки Dashboard, выберите в боковом меню «JSON MODEL». Далее скопируйте отображаемое json-содержимое в отдельный файл и сохраните его.
+#
+***Ответ***
+![4.1.png](https://github.com/Liberaty/mon_hw_2/blob/main/img/4.1.png?raw=true)
+#
 2. В качестве решения задания приведите листинг этого файла.
-
+#
+***Ответ***
+[Показатели системы.json](https://github.com/Liberaty/mon_hw_2/blob/main/Показатели%20системы-1754248814845.json)
+#
 ---
 
 ### Как оформить решение задания
