@@ -67,11 +67,17 @@
 ***Ответ***
 #
 PromQL-запросы:
+#
 CPU Utilization (%) - "100 - (avg by(instance)(rate(node_cpu_seconds_total{mode="idle"}[1m])) * 100)"
+#
 CPU Load Average 1min - "node_load1"
+#
 CPU Load Average 5min - "node_load5"
+#
 CPU Load Average 15min - "node_load15"
+#
 Free Memory (MB) - "node_memory_MemFree_bytes / 1024 / 1024"
+#
 Free Disk Space (GB) - "node_filesystem_avail_bytes{mountpoint="/"}"
 #
 ![2.2.png](https://github.com/Liberaty/mon_hw_2/blob/main/img/2.2.png?raw=true)
