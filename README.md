@@ -107,7 +107,7 @@ Free Disk Space (GB) - "node_filesystem_avail_bytes{mountpoint="/"}"
 2. В качестве решения задания приведите листинг этого файла.
 #
 ***Ответ***
-[Показатели системы.json](https://github.com/Liberaty/mon_hw_2/blob/main/Показатели%20системы-1754248814845.json)
+[Показатели системы.json](https://github.com/Liberaty/mon_hw_2/blob/main/Показатели%20системы.json)
 #
 ---
 
