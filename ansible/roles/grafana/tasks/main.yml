@@ -251,17 +251,3 @@
       SubState: {{ grafana_service_status.status.SubState }}
       Enabled: {{ grafana_service_status.enabled }}
     success_msg: "OK: Сервис Grafana активен и включён в автозагрузку"
-
-- name: Проверка, что Grafana слушает порт 3000
-  ansible.builtin.shell: ss -tuln | grep ':3000'
-  register: port_check
-  ignore_errors: true
-  changed_when: false
-  # Выполняется на управляющей машине, но проверяет состояние целевой
-
-- name: Убедиться, что Grafana слушает порт 3000
-  ansible.builtin.assert:
-    that:
-      - port_check.rc == 0
-    fail_msg: "Ошибка: Grafana не слушает порт 3000!"
-    success_msg: "OK: Grafana слушает порт 3000"

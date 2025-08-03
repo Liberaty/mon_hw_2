@@ -4,19 +4,19 @@ all:
     prometheus:
       hosts:
         ubuntu-1:
-          ansible_host: 130.193.49.108
+          ansible_host: 158.160.60.109
 
     alertmanager:
       hosts:
         ubuntu-2:
-          ansible_host: 158.160.58.210
+          ansible_host: 62.84.125.223
 
     grafana:
       hosts:
         ubuntu-3:
-          ansible_host: 158.160.101.235
+          ansible_host: 62.84.127.9
 
     node:
       hosts:
         ubuntu-4:
-          ansible_host: 158.160.35.78
+          ansible_host: 158.160.53.25
